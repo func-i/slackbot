@@ -1,3 +1,3 @@
 post '/lmgtfy' do
-  Lmgtfy.new(request).troll
+  Lmgtfy.new(params).troll
 end
