@@ -1,3 +1,3 @@
-get '/lmgtfy' do
+post '/lmgtfy' do
   p params
 end
