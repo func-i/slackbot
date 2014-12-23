@@ -10,6 +10,7 @@ require 'active_support/all'
 require 'sinatra'
 require 'sinatra/activerecord'
 
+require 'slack-notifier'
 require 'pry-byebug'
 
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
