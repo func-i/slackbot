@@ -30,3 +30,7 @@ require APP_ROOT.join('config', 'initializer')
 
 # Load the routes / actions
 require APP_ROOT.join('app', 'actions')
+
+# Bring in the bots!
+require APP_ROOT.join('app', 'bot')
+require APP_ROOT.join('app', 'bots', 'lmgtfy')
