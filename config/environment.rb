@@ -1,9 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'dotenv'
-Dotenv.load
-
 require 'active_support/all'
 
 # Load Sinatra Framework (with AR)
@@ -11,7 +8,6 @@ require 'sinatra'
 require 'sinatra/activerecord'
 
 require 'slack-notifier'
-require 'pry-byebug'
 
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
@@ -20,6 +16,12 @@ APP_NAME = APP_ROOT.basename.to_s
 configure do
   set :root, APP_ROOT.to_path
   set :server, :puma
+end
+
+configure :development, :test do
+  require 'dotenv'
+  Dotenv.load
+  require 'pry-byebug'
 end
 
 # Set up the database and models

@@ -13,11 +13,10 @@ gem 'tux'
 
 gem 'pg'
 
-gem 'dotenv'
-
 gem 'slack-notifier'
 
 group :development, :test do
+  gem 'dotenv'
   gem 'pry-byebug'
   gem 'shotgun'
 end
