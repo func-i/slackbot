@@ -1,3 +1,3 @@
-get '/' do
-  # have a blast, dude
+get '/lmgtfy' do
+  p params
 end
