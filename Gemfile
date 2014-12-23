@@ -15,8 +15,9 @@ gem 'pg'
 
 gem 'slack-notifier'
 
+gem 'dotenv'
+
 group :development, :test do
-  gem 'dotenv'
   gem 'pry-byebug'
   gem 'shotgun'
 end

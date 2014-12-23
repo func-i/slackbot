@@ -7,6 +7,9 @@ require 'active_support/all'
 require 'sinatra'
 require 'sinatra/activerecord'
 
+require 'dotenv'
+Dotenv.load
+
 require 'slack-notifier'
 
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
@@ -19,8 +22,6 @@ configure do
 end
 
 configure :development, :test do
-  require 'dotenv'
-  Dotenv.load
   require 'pry-byebug'
 end
 
