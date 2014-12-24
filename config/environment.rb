@@ -31,8 +31,8 @@ require APP_ROOT.join('config', 'database')
 # Initialize!
 require APP_ROOT.join('config', 'initializer')
 
-# Load the routes / actions
-require APP_ROOT.join('app', 'actions')
+# Load the router
+require APP_ROOT.join('app', 'router')
 
 # Bring in the bots!
 require APP_ROOT.join('app', 'bot')
