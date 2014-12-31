@@ -35,3 +35,4 @@ require APP_ROOT.join('app', 'router')
 # Bring in the bots!
 require APP_ROOT.join('app', 'bot')
 require APP_ROOT.join('app', 'bots', 'lmgtfy')
+require APP_ROOT.join('app', 'bots', 'coors')
