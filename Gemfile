@@ -14,7 +14,7 @@ gem 'puma'
 gem 'tux'
 
 gem 'slack-notifier'
-gem 'twitter'
+gem 'twitter', '~> 5.13.0'
 
 group :development, :test do
   gem 'pry-byebug'
