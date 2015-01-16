@@ -3,7 +3,7 @@ class Tweet < Bot
   IDENTIFIER = 'tweet:'
 
   def send
-    twitter.update message
+    TwitterConn.update message
   end
 
   protected
