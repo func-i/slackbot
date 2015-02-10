@@ -15,7 +15,7 @@ class Dictionary < Bot
   end
 
   def response
-    DEFINITION[word] || SHRUGS.sample
+    DictionaryHash[word] || SHRUGS.sample
   end
 
   def word
