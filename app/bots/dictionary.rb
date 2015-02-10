@@ -19,7 +19,7 @@ class Dictionary < Bot
   end
 
   def word
-    @incoming_ping['text'].gsub('define:').strip
+    @incoming_ping['text'].gsub('define:', '').strip
   end
 
 end
