@@ -5,3 +5,4 @@ TwitterConn = Twitter::REST::Client.new do |config|
   config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
   config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
 end
+DICTIONARY = JSON.parse File.read(APP_ROOT.join('db', 'dictionary.json'))

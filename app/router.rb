@@ -9,3 +9,7 @@ end
 post '/tweet' do
   Tweet.new(params).send
 end
+
+post '/define' do
+  Dictionary.new(params).define
+end
